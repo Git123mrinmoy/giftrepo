@@ -35,7 +35,15 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    {% if template contains 'home' %}
+  {% render 'home' %}
+  {% else %}
+    <!-- Include the default content for other templates here -->
+  {% endif %}
+
+    <div style="display:none;">
     {{ content_for_header }}
+    </div>
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
