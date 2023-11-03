@@ -11,18 +11,10 @@
             "heading": "CONTACT US",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
-        },
-        "86692644-181b-4d18-9de8-c3d301b6b719": {
-          "type": "text",
-          "settings": {
-            "heading": "FOLLOW US",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-          }
         }
       },
       "block_order": [
-        "footer-2",
-        "86692644-181b-4d18-9de8-c3d301b6b719"
+        "footer-2"
       ],
       "settings": {
         "color_scheme": "background-1",
