@@ -1,130 +1,520 @@
-
-    <section class="banner-wrapper">
-      <div class="banner-img">
-        {% comment %} <img class="img-fluid" src="images/banner-img.jpg" alt=""> {% endcomment %}
-        <img class="img-fluid" src="{{ 'banner-img.jpg' | asset_url }}" alt="">
+<section class="banner-wrapper">
+  <div class="banner-img">
+    {% comment %} <img class="img-fluid" src="images/banner-img.jpg" alt=""> {% endcomment %}
+    <img class="img-fluid" src="{{ 'banner-img.jpg' | asset_url }}" alt="">
+  </div>
+  <div class="banner-content-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6" data-aos="fade-right">
+          <div class="banner-content">
+            <h3>AI-Powered Gifts:</h3>
+            <h4>Where Trend Meets</h4>
+            <h6>Gift is not about what you sell, but about the genuine connections you build</h6>
+            <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="banner-content-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6" data-aos="fade-right">
-              <div class="banner-content">
-                <h3>AI-Powered Gifts:</h3>
-                <h4>Where Trend Meets</h4>
-                <h6>Gift is not about what you sell, but about the genuine connections you build</h6>
-                <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+    </div>
+  </div>
+</section>
+
+<section class="last-minute-gifts-category-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <div class="gifts-category-slider" id="gifts-category-slider">
+          <div class="category-sld-items">
+            <div class="gifts-category-wrap">
+              <a href="#">
+                <div class="gifts-category-img">
+                  {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
+                </div>
+                <h4>Birthday Gift</h4>
+              </a>
+            </div>
+          </div>
+          <div class="category-sld-items">
+            <div class="gifts-category-wrap">
+              <a href="#">
+                <div class="gifts-category-img">
+                  {% comment %} <img src="images/gifts-category-img2.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'gifts-category-img2.jpg' | asset_url }}" alt="">
+                </div>
+                <h4>Anniversary Gifts</h4>
+              </a>
+            </div>
+          </div>
+          <div class="category-sld-items">
+            <div class="gifts-category-wrap">
+              <a href="#">
+                <div class="gifts-category-img">
+                  {% comment %} <img src="images/gifts-category-img3.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'gifts-category-img3.jpg' | asset_url }}" alt="">
+                </div>
+                <h4>Gifting Holidays</h4>
+              </a>
+            </div>
+          </div>
+          <div class="category-sld-items">
+            <div class="gifts-category-wrap">
+              <a href="#">
+                <div class="gifts-category-img">
+                  {% comment %} <img src="images/gifts-category-img4.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'gifts-category-img4.jpg' | asset_url }}" alt="">
+                </div>
+                <h4>Wedding Gifts</h4>
+              </a>
+            </div>
+          </div>
+          <div class="category-sld-items">
+            <div class="gifts-category-wrap">
+              <a href="#">
+                <div class="gifts-category-img">
+                  {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
+                </div>
+                <h4>Birthday Gift</h4>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
+        <div class="gifts-add-list">
+          <div class="img">
+            {% comment %} <img class="img-fluid" src="images/gifts-add-img1.jpg" alt=""> {% endcomment %}
+            <img class="img-fluid" src="{{ 'gifts-add-img1.jpg' | asset_url }}" alt="">
+          </div>
+          <div class="gifts-add-content">
+            <h3>
+              Birthday <br>
+              Gift
+            </h3>
+            <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
+        <div class="gifts-add-list">
+          <div class="img">
+            {% comment %} <img class="img-fluid" src="images/gifts-add-img2.jpg" alt=""> {% endcomment %}
+            <img class="img-fluid" src="{{ 'gifts-add-img2.jpg' | asset_url }}" alt="">
+          </div>
+          <div class="gifts-add-content">
+            <h3>
+              Holidays <br>
+              Gift
+            </h3>
+            <a class="btn btn-info" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="last-minute-gifts-category-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5">
-            <div class="gifts-category-slider" id="gifts-category-slider">
-              <div class="category-sld-items">
-                <div class="gifts-category-wrap">
+<section class="best-seller-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4 text-center" data-aos="fade-down">
+        <div class="comon-title">
+          <h3>Best Seller</h3>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <div class="offer-tag">-20% Off</div>
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img1.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
                   <a href="#">
-                    <div class="gifts-category-img">
-                      {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
-                    </div>
-                    <h4>Birthday Gift</h4>
+                    <i class="fa-regular fa-heart"></i>
                   </a>
-                </div>
-              </div>
-              <div class="category-sld-items">
-                <div class="gifts-category-wrap">
+                </li>
+                <li>
                   <a href="#">
-                    <div class="gifts-category-img">
-                      {% comment %} <img src="images/gifts-category-img2.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'gifts-category-img2.jpg' | asset_url }}" alt="">
-                    </div>
-                    <h4>Anniversary Gifts</h4>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
                   </a>
-                </div>
-              </div>
-              <div class="category-sld-items">
-                <div class="gifts-category-wrap">
+                </li>
+                <li>
                   <a href="#">
-                    <div class="gifts-category-img">
-                      {% comment %} <img src="images/gifts-category-img3.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'gifts-category-img3.jpg' | asset_url }}" alt="">
-                    </div>
-                    <h4>Gifting Holidays</h4>
+                    <i class="fa-regular fa-eye"></i>
                   </a>
-                </div>
-              </div>
-              <div class="category-sld-items">
-                <div class="gifts-category-wrap">
-                  <a href="#">
-                    <div class="gifts-category-img">
-                      {% comment %} <img src="images/gifts-category-img4.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'gifts-category-img4.jpg' | asset_url }}" alt="">
-                    </div>
-                    <h4>Wedding Gifts</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="category-sld-items">
-                <div class="gifts-category-wrap">
-                  <a href="#">
-                    <div class="gifts-category-img">
-                      {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
-                    </div>
-                    <h4>Birthday Gift</h4>
-                  </a>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
-            <div class="gifts-add-list">
-              <div class="img">
-                {% comment %} <img class="img-fluid" src="images/gifts-add-img1.jpg" alt=""> {% endcomment %}
-                <img class="img-fluid" src="{{ 'gifts-add-img1.jpg' | asset_url }}" alt="">
-              </div>
-              <div class="gifts-add-content">
-                <h3>
-                  Birthday <br>
-                  Gift
-                </h3>
-                <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          <div class="product-content">
+            <h3>Gift Basket - Ultimate Size</h3>
+            <div class="qty">( 2pcs )</div>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
             </div>
-          </div>
-          <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
-            <div class="gifts-add-list">
-              <div class="img">
-                {% comment %} <img class="img-fluid" src="images/gifts-add-img2.jpg" alt=""> {% endcomment %}
-                <img class="img-fluid" src="{{ 'gifts-add-img2.jpg' | asset_url }}" alt="">
-              </div>
-              <div class="gifts-add-content">
-                <h3>
-                  Holidays <br>
-                  Gift
-                </h3>
-                <a class="btn btn-info" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="best-seller-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-4 text-center" data-aos="fade-down">
-            <div class="comon-title">
-              <h3>Best Seller</h3>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img2.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img2.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="product-content">
+            <h3>Faceless Portrait, custom illustration</h3>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <div class="offer-tag">-20% Off</div>
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img3.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img3.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Personalized Girls jewelry box</h3>
+            <div class="qty">( 2pcs )</div>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <div class="offer-tag">-20% Off</div>
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img4.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img4.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Song Plaque With Stand</h3>
+            <div class="qty">(4-6 pcs,)</div>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt="">  {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img5.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img5.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Embroidery Felt Bookmarks</h3>
+            <div class="qty">( 2pcs )</div>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt="">  {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <div class="offer-tag">-20% Off</div>
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img6.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img6.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Birthday gift</h3>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt="">  {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <div class="offer-tag">-20% Off</div>
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img7.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img7.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Suede Jewelry Roll</h3>
+            <div class="qty">( 6pcs )</div>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="product-wrap">
+          <div class="prd-img">
+            <div class="offer-tag">-20% Off</div>
+            <a href="#">
+              {% comment %} <img class="img-fluid" src="images/product-img8.jpg" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'product-img8.jpg' | asset_url }}" alt="">
+            </a>
+            <div class="product-cart-wishlist">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3>Song Plaque With Stand</h3>
+            <div class="qty">(4-6 pcs,)</div>
+            <div class="price">$20.10 <del>$30.25</del></div>
+            <div class="rating-wrap">
+              {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+              <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+              <span>( 5.2 K Reviews )</span>
+            </div>
+            <div class="shop-btn-wrap">
+              <a class="btn shop-btn" href="#">Shop Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+        <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gifts-for-children-wrapper">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-7 mb-4" data-aos="fade-left">
+        <div class="gifts-for-children-content">
+          <h5>Sale up to 50% off</h5>
+          <h3>Gifts For Children</h3>
+          <p>
+            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+            pellentesque felis.
+          </p>
+          <a class="btn btn-info-light" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-5" data-aos="fade-right">
+        <div class="gifts-children-right-img">
+          {% comment %} <img class="img-fluid" src="images/gifts-children-right-img1.png" alt=""> {% endcomment %}
+          <img class="img-fluid" src="{{ 'gifts-children-right-img1.png' | asset_url }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-product-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 mb-4" data-aos="fade-down">
+        <div class="comon-title">
+          <h3>Featured Products</h3>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 text-end">
+        <div class="btn-wrap">
+          <button class="featured-prev-btn slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="featured-next-btn slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 pe-0">
+        <div class="featured-product-slider" id="featured-product-slider">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <div class="offer-tag">-20% Off</div>
@@ -167,7 +557,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <a href="#">
@@ -208,7 +598,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <div class="offer-tag">-20% Off</div>
@@ -251,7 +641,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <div class="offer-tag">-20% Off</div>
@@ -284,7 +674,7 @@
                 <div class="qty">(4-6 pcs,)</div>
                 <div class="price">$20.10 <del>$30.25</del></div>
                 <div class="rating-wrap">
-                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt="">  {% endcomment %}
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
                   <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
                   <span>( 5.2 K Reviews )</span>
                 </div>
@@ -294,7 +684,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <a href="#">
@@ -326,7 +716,7 @@
                 <div class="qty">( 2pcs )</div>
                 <div class="price">$20.10 <del>$30.25</del></div>
                 <div class="rating-wrap">
-                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt="">  {% endcomment %}
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
                   <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
                   <span>( 5.2 K Reviews )</span>
                 </div>
@@ -336,7 +726,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <div class="offer-tag">-20% Off</div>
@@ -368,7 +758,7 @@
                 <h3>Birthday gift</h3>
                 <div class="price">$20.10 <del>$30.25</del></div>
                 <div class="rating-wrap">
-                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt="">  {% endcomment %}
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
                   <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
                   <span>( 5.2 K Reviews )</span>
                 </div>
@@ -378,13 +768,65 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="thelastminutegifts-wrapper">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 mb-4 mb-md-0" data-aos="fade-left">
+        <div class="thelastminutegifts-left-img">
+          {% comment %} <img class="img-fluid" src="images/thelastminutegifts-left-img.png" alt=""> {% endcomment %}
+          <img class="img-fluid" src="{{ 'thelastminutegifts-left-img.png' | asset_url }}" alt="">
+        </div>
+      </div>
+      <div class="col-12 col-md-7" data-aos="fade-right">
+        <div class="thelastminutegifts-right-content">
+          <h3>
+            Welcome To <br>
+            Thelastminutegifts Shop
+          </h3>
+          <p>
+            You'll discover a curated collection of handpicked treasures that cater to every taste and occasion. Whether
+            you're celebrating a special milestone, expressing your heartfelt appreciation, or simply indulging in a
+            little self-pampering, our diverse range of gifts is designed to inspire and delight.
+          </p>
+          <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="new-product-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 mb-4" data-aos="fade-down">
+        <div class="comon-title">
+          <h3>New Products</h3>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 text-end">
+        <div class="btn-wrap">
+          <button class="newprd-prev-btn slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="newprd-next-btn slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 pe-0 mb-5">
+        <div class="new-product-slider" id="new-product-slider">
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <div class="offer-tag">-20% Off</div>
                 <a href="#">
-                  {% comment %} <img class="img-fluid" src="images/product-img7.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'product-img7.jpg' | asset_url }}" alt="">
+                  {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'product-img1.jpg' | asset_url }}" alt="">
                 </a>
                 <div class="product-cart-wishlist">
                   <ul>
@@ -407,8 +849,8 @@
                 </div>
               </div>
               <div class="product-content">
-                <h3>Suede Jewelry Roll</h3>
-                <div class="qty">( 6pcs )</div>
+                <h3>Gift Basket - Ultimate Size</h3>
+                <div class="qty">( 2pcs )</div>
                 <div class="price">$20.10 <del>$30.25</del></div>
                 <div class="rating-wrap">
                   {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
@@ -421,13 +863,97 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="featured-sld-items">
+            <div class="product-wrap">
+              <div class="prd-img">
+                <a href="#">
+                  {% comment %} <img class="img-fluid" src="images/product-img2.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'product-img2.jpg' | asset_url }}" alt="">
+                </a>
+                <div class="product-cart-wishlist">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-eye"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3>Faceless Portrait, custom illustration</h3>
+                <div class="price">$20.10 <del>$30.25</del></div>
+                <div class="rating-wrap">
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                  <span>( 5.2 K Reviews )</span>
+                </div>
+                <div class="shop-btn-wrap">
+                  <a class="btn shop-btn" href="#">Shop Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-sld-items">
             <div class="product-wrap">
               <div class="prd-img">
                 <div class="offer-tag">-20% Off</div>
                 <a href="#">
-                  {% comment %} <img class="img-fluid" src="images/product-img8.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'product-img8.jpg' | asset_url }}" alt="">
+                  {% comment %} <img class="img-fluid" src="images/product-img3.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'product-img3.jpg' | asset_url }}" alt="">
+                </a>
+                <div class="product-cart-wishlist">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-eye"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3>Personalized Girls jewelry box</h3>
+                <div class="qty">( 2pcs )</div>
+                <div class="price">$20.10 <del>$30.25</del></div>
+                <div class="rating-wrap">
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                  <span>( 5.2 K Reviews )</span>
+                </div>
+                <div class="shop-btn-wrap">
+                  <a class="btn shop-btn" href="#">Shop Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-sld-items">
+            <div class="product-wrap">
+              <div class="prd-img">
+                <div class="offer-tag">-20% Off</div>
+                <a href="#">
+                  {% comment %} <img class="img-fluid" src="images/product-img4.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'product-img4.jpg' | asset_url }}" alt="">
                 </a>
                 <div class="product-cart-wishlist">
                   <ul>
@@ -464,873 +990,234 @@
               </div>
             </div>
           </div>
-
-          <div class="col-12 text-center mt-4">
+          <div class="featured-sld-items">
+            <div class="product-wrap">
+              <div class="prd-img">
+                <a href="#">
+                  {% comment %} <img class="img-fluid" src="images/product-img5.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'product-img5.jpg' | asset_url }}" alt="">
+                </a>
+                <div class="product-cart-wishlist">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-eye"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3>Embroidery Felt Bookmarks</h3>
+                <div class="qty">( 2pcs )</div>
+                <div class="price">$20.10 <del>$30.25</del></div>
+                <div class="rating-wrap">
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                  <span>( 5.2 K Reviews )</span>
+                </div>
+                <div class="shop-btn-wrap">
+                  <a class="btn shop-btn" href="#">Shop Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-sld-items">
+            <div class="product-wrap">
+              <div class="prd-img">
+                <div class="offer-tag">-20% Off</div>
+                <a href="#">
+                  {% comment %} <img class="img-fluid" src="images/product-img6.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'product-img6.jpg' | asset_url }}" alt="">
+                </a>
+                <div class="product-cart-wishlist">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-eye"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3>Birthday gift</h3>
+                <div class="price">$20.10 <del>$30.25</del></div>
+                <div class="rating-wrap">
+                  {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                  <span>( 5.2 K Reviews )</span>
+                </div>
+                <div class="shop-btn-wrap">
+                  <a class="btn shop-btn" href="#">Shop Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4 birthday-gifts-add" data-aos="zoom-in">
+        <div class="gifts-add-list">
+          <div class="img">
+            {% comment %} <img class="img-fluid" src="images/gifts-add-img3.jpg" alt=""> {% endcomment %}
+            <img class="img-fluid" src="{{ 'gifts-add-img3.jpg' | asset_url }}" alt="">
+          </div>
+          <div class="gifts-add-content">
+            <h3>
+              Birthday <br>
+              Gift
+            </h3>
             <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="gifts-for-children-wrapper">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-7 mb-4" data-aos="fade-left">
-            <div class="gifts-for-children-content">
-              <h5>Sale up to 50% off</h5>
-              <h3>Gifts For Children</h3>
-              <p>
-                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-                pellentesque felis.
-              </p>
-              <a class="btn btn-info-light" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+      <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
+        <div class="gifts-add-list">
+          <div class="img">
+            {% comment %} <img class="img-fluid" src="images/gifts-add-img4.jpg" alt=""> {% endcomment %}
+            <img class="img-fluid" src="{{ 'gifts-add-img4.jpg' | asset_url }}" alt="">
           </div>
-          <div class="col-12 col-md-5" data-aos="fade-right">
-            <div class="gifts-children-right-img">
-              {% comment %} <img class="img-fluid" src="images/gifts-children-right-img1.png" alt=""> {% endcomment %}
-              <img class="img-fluid" src="{{ 'gifts-children-right-img1.png' | asset_url }}" alt="">
-            </div>
+          <div class="gifts-add-content">
+            <h3>
+              Holidays <br>
+              Gift
+            </h3>
+            <a class="btn btn-info" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="featured-product-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 mb-4" data-aos="fade-down">
-            <div class="comon-title">
-              <h3>Featured Products</h3>
-            </div>
+<section class="newsletter-instagram-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 mb-4">
+        <div class="newsletter-wrap">
+          <div class="title mb-4" data-aos="fade-down">
+            <h3>Keep Updated & Get Unlimited Discount</h3>
+            <p>Sign up for our newsletter to receive updates and exclusive offers</p>
           </div>
-          <div class="col-12 col-md-4 mb-4 text-end">
-            <div class="btn-wrap">
-              <button class="featured-prev-btn slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>
-              <button class="featured-next-btn slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+          <form>
+            <div class="newsletter-frm">
+              <div class="input-text">
+                <input class="form-control" type="text" name="" placeholder="Your email address">
+              </div>
+              <div class="submit">
+                <input class="btn btn-gradient" type="submit" name="" value="Subscribe">
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 pe-0">
-            <div class="featured-product-slider" id="featured-product-slider">
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img1.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Gift Basket - Ultimate Size</h3>
-                    <div class="qty">( 2pcs )</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
+      <div class="col-12 col-md-8 offset-md-2">
+        <div class="instagram-feed-wrap">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img1.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img1.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img2.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img2.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Faceless Portrait, custom illustration</h3>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img2.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img2.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img3.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img3.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Personalized Girls jewelry box</h3>
-                    <div class="qty">( 2pcs )</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img3.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img3.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img4.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img4.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Song Plaque With Stand</h3>
-                    <div class="qty">(4-6 pcs,)</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img4.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img4.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img5.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img5.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Embroidery Felt Bookmarks</h3>
-                    <div class="qty">( 2pcs )</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img5.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img5.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img6.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img6.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Birthday gift</h3>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img6.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img6.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img7.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img7.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="thelastminutegifts-wrapper">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 mb-4 mb-md-0" data-aos="fade-left">
-            <div class="thelastminutegifts-left-img">
-              {% comment %} <img class="img-fluid" src="images/thelastminutegifts-left-img.png" alt=""> {% endcomment %}
-              <img class="img-fluid" src="{{ 'thelastminutegifts-left-img.png' | asset_url }}" alt="">
-            </div>
-          </div>
-          <div class="col-12 col-md-7" data-aos="fade-right">
-            <div class="thelastminutegifts-right-content">
-              <h3>
-                Welcome To <br>
-                Thelastminutegifts Shop
-              </h3>
-              <p>
-                You'll discover a curated collection of handpicked treasures that cater to every taste and occasion.
-                Whether you're celebrating a special milestone, expressing your heartfelt appreciation, or simply
-                indulging in a little self-pampering, our diverse range of gifts is designed to inspire and delight.
-              </p>
-              <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="new-product-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 mb-4" data-aos="fade-down">
-            <div class="comon-title">
-              <h3>New Products</h3>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4 text-end">
-            <div class="btn-wrap">
-              <button class="newprd-prev-btn slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>
-              <button class="newprd-next-btn slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 pe-0 mb-5">
-            <div class="new-product-slider" id="new-product-slider">
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img1.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Gift Basket - Ultimate Size</h3>
-                    <div class="qty">( 2pcs )</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img2.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img2.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Faceless Portrait, custom illustration</h3>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img3.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img3.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Personalized Girls jewelry box</h3>
-                    <div class="qty">( 2pcs )</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img4.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img4.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Song Plaque With Stand</h3>
-                    <div class="qty">(4-6 pcs,)</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img5.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img5.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Embroidery Felt Bookmarks</h3>
-                    <div class="qty">( 2pcs )</div>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="featured-sld-items">
-                <div class="product-wrap">
-                  <div class="prd-img">
-                    <div class="offer-tag">-20% Off</div>
-                    <a href="#">
-                      {% comment %} <img class="img-fluid" src="images/product-img6.jpg" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'product-img6.jpg' | asset_url }}" alt="">
-                    </a>
-                    <div class="product-cart-wishlist">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <h3>Birthday gift</h3>
-                    <div class="price">$20.10 <del>$30.25</del></div>
-                    <div class="rating-wrap">
-                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                      <span>( 5.2 K Reviews )</span>
-                    </div>
-                    <div class="shop-btn-wrap">
-                      <a class="btn shop-btn" href="#">Shop Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 mb-4 birthday-gifts-add" data-aos="zoom-in">
-            <div class="gifts-add-list">
-              <div class="img">
-                {% comment %} <img class="img-fluid" src="images/gifts-add-img3.jpg" alt=""> {% endcomment %}
-                <img class="img-fluid" src="{{ 'gifts-add-img3.jpg' | asset_url }}" alt="">
-              </div>
-              <div class="gifts-add-content">
-                <h3>
-                  Birthday <br>
-                  Gift
-                </h3>
-                <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
-            <div class="gifts-add-list">
-              <div class="img">
-                {% comment %} <img class="img-fluid" src="images/gifts-add-img4.jpg" alt=""> {% endcomment %}
-                <img class="img-fluid" src="{{ 'gifts-add-img4.jpg' | asset_url }}" alt="">
-              </div>
-              <div class="gifts-add-content">
-                <h3>
-                  Holidays <br>
-                  Gift
-                </h3>
-                <a class="btn btn-info" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="newsletter-instagram-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-2 mb-4">
-            <div class="newsletter-wrap">
-              <div class="title mb-4" data-aos="fade-down">
-                <h3>Keep Updated & Get Unlimited Discount</h3>
-                <p>Sign up for our newsletter to receive updates and exclusive offers</p>
-              </div>
-              <form>
-                <div class="newsletter-frm">
-                  <div class="input-text">
-                    <input class="form-control" type="text" name="" placeholder="Your email address">
-                  </div>
-                  <div class="submit">
-                    <input class="btn btn-gradient" type="submit" name="" value="Subscribe">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-12 col-md-8 offset-md-2">
-            <div class="instagram-feed-wrap">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img1.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img1.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img2.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img2.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img3.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img3.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img4.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img4.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img5.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img5.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img6.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img6.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
-                  <div class="instagram-list">
-                    {% comment %} <img class="img-fluid" src="images/instagram-feed-img7.jpg" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'instagram-feed-img7.jpg' | asset_url }}" alt="">
-                    <div class="instagram-hover">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="footer-inner-wrap">
-              <h3>PRODUCTS</h3>
-              <div class="footer-menu">
-                <ul>
-                  <li><a href="#">Birthdays</a></li>
-                  <li><a href="#">Anniversaries</a></li>
-                  <li><a href="#">Holidays </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="footer-inner-wrap">
-              <h3>Help</h3>
-              <div class="footer-menu">
-                <ul>
-                  <li><a href="#">Content Standards </a></li>
-                  <li><a href="#">Satisfaction Guarantee</a></li>
-                  <li><a href="#">Return Policy </a></li>
-                  <li><a href="#">Shipping Options </a></li>
-                  <li><a href="#">Pricing </a></li>
-                  <li><a href="#">View All </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="footer-inner-wrap">
-              <h3>Link</h3>
-              <div class="footer-menu">
-                <ul>
-                  <li><a href="#"> Home </a></li>
-                  <li><a href="#"> About Us </a></li>
-                  <li><a href="#"> Shop </a></li>
-                  <li><a href="#"> Contacts </a></li>
-                  <li><a href="#"> Sale! </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="footer-inner-wrap">
-              <h3>Contact Us</h3>
-              <div class="contact-det-list">
-                <span class="icon">
-                  <i class="fa-solid fa-phone-volume"></i>
-                </span>
-                <div class="content">
-                  <p><a href="tel:650-440-5858">650-440-5858</a></p>
-                </div>
-              </div>
-              <div class="contact-det-list">
-                <span class="icon">
-                  <i class="fa-regular fa-envelope"></i>
-                </span>
-                <div class="content">
-                  <p>2899 Bethany Road, San Ramon, CA, USA, 94582</p>
-                </div>
-              </div>
-
-              <div class="footer-social-wrap">
-                <h4>Follow us</h4>
-                <ul class="social-icon">
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="footer-copright">
-              <p>Copyright © 2022. All Rights Reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-    <script src="{{ 'popper.min.js' | asset_url }}"></script>
-    <script src="{{ 'bootstrap.min.js' | asset_url }}"></script>
-    <script src="{{ 'slick.min.js' | asset_url }}"></script>
-    <script src="{{ 'aos.js' | asset_url }}"></script>
-    <script src="{{ 'external.js' | asset_url }}"></script>
-    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-  </body>
-</html>
+    </div>
+  </div>
+</section>
