@@ -1,0 +1,161 @@
+@media(min-width: 992px) and (max-width: 1199px){
+
+    .header-wrapper .navbar .logo-wrap img{
+        height: 80px;
+    }
+    .header-wrapper .navbar .navbar-nav li{
+        padding: 0px 5px;
+    }
+    .header-wrapper .navbar .navbar-nav li a{
+        font-size: 15px;
+    }
+    .my-ac-wrap ul li{
+        padding: 0px 5px;
+    }
+    .my-ac-wrap ul li a{
+        width: 40px;
+        height: 40px;
+    }
+
+    .banner-content-wrap .banner-content h3{
+        font-size: 40px;
+    }
+    .banner-content-wrap .banner-content h4{
+        font-size: 40px;
+    }
+
+    
+}
+
+/*max width 991px*/
+@media(max-width: 991px){
+    .comon-title h3{
+        font-size: 30px;
+    }
+    
+    /*### header css start ####*/
+
+    .my-ac-wrap ul li{
+        padding: 0px 5px;
+    }
+
+    .header-wrapper .navbar .navbar-toggler {
+        background-color: #12908D;
+        border: 0;
+        padding: 8px 10px;
+        color: #fff;
+    }
+    .header-wrapper .navbar .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20px 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 50%);
+    }
+
+
+    .banner-content-wrap .banner-content h4{
+        font-size: 25px;
+    }
+    .banner-content-wrap .banner-content h3{
+        font-size: 25px;
+    }
+
+    .banner-wrapper .banner-img > img{
+        height: 500px;
+    }
+    /*### header css end ####*/
+
+    .gifts-category-wrap .gifts-category-img{
+        width: 190px;
+        height: 190px;
+    }
+
+    .gifts-for-children-content h3{
+        font-size: 35px;
+    }
+
+    .thelastminutegifts-right-content h3{
+        font-size: 30px;
+    }
+
+    .footer-inner-wrap{
+        border-right: 0px;
+    }
+
+    .inner-banner img{
+        height: 350px;
+    }
+    .inner-banner .inner-banner-cont h1{
+        font-size: 25px;
+    }
+}
+
+/*width 768px to 991px*/
+@media(min-width: 768px) and (max-width: 991px){
+
+}
+
+/*max width 767px*/
+@media(max-width: 767px){
+	.header-wrapper .navbar .logo-wrap{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .banner-content-wrap{
+        top: 65%;
+    }
+
+    .gifts-add-list .gifts-add-content h3{
+        font-size: 30px;
+    }
+
+    .newsletter-wrap .title h3{
+        font-size: 30px;
+    }
+    .instagram-feed-wrap{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*width 576px to 767px*/
+@media(min-width: 576px) and (max-width: 767px){
+
+}
+
+/*max with 575px*/
+@media(max-width: 575px){
+
+    .hed-search .form-search .search-input{
+        width: 105px;
+    }
+
+    .inner-banner .inner-banner-cont{
+        bottom: 2%;
+    }
+    .inner-banner .inner-banner-cont h1{
+        font-size: 20px;
+    }
+
+	.gifts-add-list .gifts-add-content h3{
+        font-size: 20px;
+    }
+    .newsletter-wrap .title h3 {
+        font-size: 25px;
+    }
+    .newsletter-frm{
+        width: 100%;
+    }
+
+    .my-ac-wrap ul li a{
+        width: 35px;
+        height: 35px;
+    }
+}
