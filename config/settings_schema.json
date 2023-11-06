@@ -1480,7 +1480,7 @@
         "id": "button_link"
       },
       {
-        "type": "image",
+        "type": "image_picker",
         "label": "Banner Image",
         "id": "banner_image"
       }
