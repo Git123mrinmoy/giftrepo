@@ -113,6 +113,9 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "banner_heading": "<h3>AI-Powered Gifts: <\/h3>\n              <h4>Where Trend Meets <\/h4>\n              <h6>Gift is not about what you sell, but about the genuine connections you build<\/h6>",
+    "button_link": "\/collections",
+    "banner_image": "shopify:\/\/shop_images\/banner-img.jpg",
     "footer_phone": "650-440-5858",
     "footer_address": "2899 Bethany Road, San Ramon, CA, USA, 94582",
     "footer_fb_link": "#",
@@ -135,6 +138,16 @@
       },
       "footer": {
         "type": "footer",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "home": {
+        "type": "home",
         "settings": {
         }
       }
