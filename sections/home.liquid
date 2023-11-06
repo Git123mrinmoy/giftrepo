@@ -1,7 +1,7 @@
 <section class="banner-wrapper">
   <div class="banner-img">
     {% comment %} <img class="img-fluid" src="images/banner-img.jpg" alt=""> {% endcomment %}
-    <img class="img-fluid" src="{{ settings.banner_image | asset_url }}" alt="">
+    <img class="img-fluid" src="{{ settings.banner_image | img_url: 'master' }}" alt="">
   </div>
   <div class="banner-content-wrap">
     <div class="container">
