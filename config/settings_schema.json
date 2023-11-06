@@ -1483,6 +1483,10 @@
         "type": "image_picker",
         "label": "Banner Image",
         "id": "banner_image"
+      },
+      {
+        "type": "collection",
+        "id": "custom_collection"
       }
     ]
   },
