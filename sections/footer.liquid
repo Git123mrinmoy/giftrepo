@@ -108,5 +108,14 @@
   <script src="{{ 'aos.js' | asset_url }}"></script>
   <script src="{{ 'external.js' | asset_url }}"></script>
   <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#add_icon').click(function() {
+        //alert('ok');
+        $('#add_button').click();
+      });
+    });
+    </script>
 </body>
 </html>
