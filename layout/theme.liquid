@@ -291,7 +291,11 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-group' %}
+    {% comment %} {% sections 'header-group' %} {% endcomment %}
+    <header>
+      <!-- Other footer content -->
+      {% section 'header' %}
+    </header>
 
     {% if template == 'index' %}
       {% render 'index' %}
