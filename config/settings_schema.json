@@ -1486,6 +1486,7 @@
       },
       {
         "type": "image_picker",
+        "label": "Set Collection Image",
         "id": "custom_collection1_img"
       },
       {
@@ -1494,6 +1495,7 @@
       },
       {
         "type": "image_picker",
+        "label": "Set Collection Image",
         "id": "custom_collection2_img"
       },
       {
