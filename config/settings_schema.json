@@ -1467,6 +1467,26 @@
     ]
   },
   {
+    "name": "Home Setting",
+    "settings": [
+      {
+        "type": "textarea",
+        "label": "Banner Heading",
+        "id": "banner_heading"
+      },
+      {
+        "type": "text",
+        "label": "Shop Now button link",
+        "id": "button_link"
+      },
+      {
+        "type": "image",
+        "label": "Banner Image",
+        "id": "banner_image"
+      }
+    ]
+  },
+  {
     "name": "Footer Setting",
     "settings": [
       {
@@ -1503,26 +1523,6 @@
         "type": "text",
         "label": "Copyright Text",
         "id": "footer_copyright"
-      }
-    ]
-  },
-  {
-    "name": "Home Setting",
-    "settings": [
-      {
-        "type": "textarea",
-        "label": "Banner Heading",
-        "id": "banner_heading"
-      },
-      {
-        "type": "text",
-        "label": "Shop Now button link",
-        "id": "button_link"
-      },
-      {
-        "type": "image",
-        "label": "Banner Image",
-        "id": "banner_image"
       }
     ]
   }
