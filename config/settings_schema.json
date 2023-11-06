@@ -1470,24 +1470,14 @@
     "name": "Footer Setting",
     "settings": [
       {
-        "type": "textarea",
-        "label": "Footer Details",
-        "id": "footer_details"
-      },
-      {
-        "type": "textarea",
-        "label": "Get In Touch",
-        "id": "footer_get_touch"
+        "type": "text",
+        "label": "Footer Phone",
+        "id": "footer_phone"
       },
       {
         "type": "text",
         "label": "Footer Address",
         "id": "footer_address"
-      },
-      {
-        "type": "text",
-        "label": "Footer Phone",
-        "id": "footer_phone"
       },
       {
         "type": "text",
@@ -1508,6 +1498,11 @@
         "type": "text",
         "label": "Social LinkedIn Link",
         "id": "footer_linkedin_link"
+      },
+      {
+        "type": "text",
+        "label": "Copyright Text",
+        "id": "footer_copyright"
       }
     ]
   }
