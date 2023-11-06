@@ -24,61 +24,30 @@
     <div class="row">
       <div class="col-12 mb-5">
         <div class="gifts-category-slider" id="gifts-category-slider">
-          <div class="category-sld-items">
-            <div class="gifts-category-wrap">
-              <a href="#">
-                <div class="gifts-category-img">
-                  {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
-                </div>
-                <h4>Birthday Gift</h4>
-              </a>
+          {% for collection in collections %}
+            {% comment %}
+              <li>
+                <a href="{{ collection.url }}">
+                  {{ collection.title }}
+                </a>
+              </li>
+            {% endcomment %}
+            <div class="category-sld-items">
+              <div class="gifts-category-wrap">
+                <a href="{{ collection.url }}">
+                  <div class="gifts-category-img">
+                    {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
+                    <img
+                      class="img-fluid"
+                      src="{{ collection.featured_image | img_url: 'master' }}"
+                      alt="{{ collection.title }}"
+                    >
+                  </div>
+                  <h4>{{ collection.title }}</h4>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="category-sld-items">
-            <div class="gifts-category-wrap">
-              <a href="#">
-                <div class="gifts-category-img">
-                  {% comment %} <img src="images/gifts-category-img2.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'gifts-category-img2.jpg' | asset_url }}" alt="">
-                </div>
-                <h4>Anniversary Gifts</h4>
-              </a>
-            </div>
-          </div>
-          <div class="category-sld-items">
-            <div class="gifts-category-wrap">
-              <a href="#">
-                <div class="gifts-category-img">
-                  {% comment %} <img src="images/gifts-category-img3.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'gifts-category-img3.jpg' | asset_url }}" alt="">
-                </div>
-                <h4>Gifting Holidays</h4>
-              </a>
-            </div>
-          </div>
-          <div class="category-sld-items">
-            <div class="gifts-category-wrap">
-              <a href="#">
-                <div class="gifts-category-img">
-                  {% comment %} <img src="images/gifts-category-img4.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'gifts-category-img4.jpg' | asset_url }}" alt="">
-                </div>
-                <h4>Wedding Gifts</h4>
-              </a>
-            </div>
-          </div>
-          <div class="category-sld-items">
-            <div class="gifts-category-wrap">
-              <a href="#">
-                <div class="gifts-category-img">
-                  {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
-                </div>
-                <h4>Birthday Gift</h4>
-              </a>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
       <div class="col-12 col-md-6 mb-4" data-aos="zoom-in">
