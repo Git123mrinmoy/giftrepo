@@ -1486,7 +1486,11 @@
       },
       {
         "type": "collection",
-        "id": "custom_collection"
+        "id": "custom_collection1"
+      },
+      {
+        "type": "collection",
+        "id": "custom_collection2"
       }
     ]
   },
