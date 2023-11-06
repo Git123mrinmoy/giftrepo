@@ -8,10 +8,10 @@
       <div class="row">
         <div class="col-12 col-md-6" data-aos="fade-right">
           <div class="banner-content">
-            <h3>AI-Powered Gifts:</h3>
-            <h4>Where Trend Meets</h4>
-            <h6>Gift is not about what you sell, but about the genuine connections you build</h6>
-            <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            {{ settings.banner_heading }}
+            <a class="btn btn-gradient" href=" {{ settings.button_link }}"
+              >Shop Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
               <a href="#">
                 <div class="gifts-category-img">
                   {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
-                  <img class="img-fluid" src="{{ 'gifts-category-img1.jpg' | asset_url }}" alt="">
+                  <img class="img-fluid" src="{{ settings.banner_image | img_url: 'master' }}" alt="">
                 </div>
                 <h4>Birthday Gift</h4>
               </a>
