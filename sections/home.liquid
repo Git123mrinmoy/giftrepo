@@ -54,14 +54,15 @@
         <div class="gifts-add-list">
           <div class="img">
             {% comment %} <img class="img-fluid" src="images/gifts-add-img1.jpg" alt=""> {% endcomment %}
-            <img class="img-fluid" src="{{ 'gifts-add-img1.jpg' | asset_url }}" alt="">
+            <img class="img-fluid" src="{{ settings.custom_collection1.featured_image | img_url: 'master' }}" alt="">
           </div>
           <div class="gifts-add-content">
             <h3>
-              Birthday <br>
-              Gift
+              {{ settings.custom_collection1.title }}
             </h3>
-            <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-gradient" href="{{ settings.custom_collection1.url }}"
+              >Shop Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -69,14 +70,15 @@
         <div class="gifts-add-list">
           <div class="img">
             {% comment %} <img class="img-fluid" src="images/gifts-add-img2.jpg" alt=""> {% endcomment %}
-            <img class="img-fluid" src="{{ 'gifts-add-img2.jpg' | asset_url }}" alt="">
+            <img class="img-fluid" src="{{ settings.custom_collection2.featured_image | img_url: 'master' }}" alt="">
           </div>
           <div class="gifts-add-content">
             <h3>
-              Holidays <br>
-              Gift
+              {{ settings.custom_collection2.title }}
             </h3>
-            <a class="btn btn-info" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-info" href="{{ settings.custom_collection2.url }}"
+              >Shop Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
