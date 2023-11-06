@@ -113,12 +113,6 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "footer_phone": "650-440-5858",
-    "footer_address": "2899 Bethany Road, San Ramon, CA, USA, 94582",
-    "footer_fb_link": "#",
-    "footer_instagram_link": "#",
-    "footer_twitter_link": "#",
-    "footer_linkedin_link": "#",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",

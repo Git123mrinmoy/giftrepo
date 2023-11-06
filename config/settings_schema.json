@@ -1475,7 +1475,7 @@
         "id": "footer_phone"
       },
       {
-        "type": "text",
+        "type": "textarea",
         "label": "Footer Address",
         "id": "footer_address"
       },
