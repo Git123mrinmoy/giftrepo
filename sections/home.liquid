@@ -431,19 +431,44 @@
       <div class="col-12 col-md-8 offset-md-2 mb-4">
         <div class="newsletter-wrap">
           <div class="title mb-4" data-aos="fade-down">
-            <h3>Keep Updated & Get Unlimited Discount</h3>
-            <p>Sign up for our newsletter to receive updates and exclusive offers</p>
+            {{ settings.newsltter }}
           </div>
-          <form>
+          {% form 'customer', class: 'newsletter-form' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-frm">
               <div class="input-text">
-                <input class="form-control" type="text" name="" placeholder="Your email address">
+                <input
+                  class="form-control"
+                  type="text"
+                  value="{{ form.email }}"
+                  name="contact[email]"
+                  placeholder="Your email address"
+                  required
+                >
               </div>
               <div class="submit">
-                <input class="btn btn-gradient" type="submit" name="" value="Subscribe">
+                <input class="btn btn-gradient" type="submit" name="commit" value="Subscribe">
               </div>
+              {%- if form.errors -%}
+                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                  {%- render 'icon-error' -%}
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </small>
+              {%- endif -%}
             </div>
-          </form>
+            {%- if form.posted_successfully? -%}
+              <h3
+                class="newsletter-form__message newsletter-form__message--success form__message"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus
+              >
+                {% render 'icon-success' -%}
+                {{- 'newsletter.success' | t }}
+              </h3>
+            {%- endif -%}
+          {% endform %}
         </div>
       </div>
       <div class="col-12 col-md-8 offset-md-2">

@@ -1549,6 +1549,10 @@
       {
         "type": "collection",
         "id": "custom_collection4"
+      },
+      {
+        "type": "textarea",
+        "id": "newsletter"
       }
     ]
   },
