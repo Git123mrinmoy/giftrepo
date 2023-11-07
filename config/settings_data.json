@@ -173,6 +173,18 @@
       },
       "about": {
         "type": "about",
+        "blocks": {
+          "39b4bf24-25a3-4cf5-ab17-4a32f2fefb85": {
+            "type": "text",
+            "settings": {
+              "text_heading": "Heading",
+              "subtext": "<p>Subtext Details<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "39b4bf24-25a3-4cf5-ab17-4a32f2fefb85"
+        ],
         "settings": {
           "about_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg",
           "about_left_img": "shopify:\/\/shop_images\/thelastminutegifts-left-img.png",
