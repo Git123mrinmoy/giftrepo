@@ -181,10 +181,19 @@
               "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. since the 1500s, when an unknown printer took a galley of type.\"<\/p>",
               "icon_class": "fa-solid fa-cart-plus"
             }
+          },
+          "f6c47983-fb76-4ca0-9d04-7d44e0dfb154": {
+            "type": "text",
+            "settings": {
+              "text_heading": "Free delivery",
+              "subtext": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. or randomised words which don't look even slightly believable.\"<\/p>",
+              "icon_class": "fa-solid fa-truck"
+            }
           }
         },
         "block_order": [
-          "c98fbe0c-a8a0-48f9-8147-9902a682bbfa"
+          "c98fbe0c-a8a0-48f9-8147-9902a682bbfa",
+          "f6c47983-fb76-4ca0-9d04-7d44e0dfb154"
         ],
         "settings": {
           "about_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg",
