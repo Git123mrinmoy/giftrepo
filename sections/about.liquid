@@ -98,6 +98,26 @@
 {% schema %}
 {
   "name": "About Setting",
+  "blocks": [
+    {
+      "type": "text",
+      "name": "How It Works",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text_heading",
+          "default": "Heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "default": "<p>Subtext Details</p>",
+          "label": "Subtext"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "image_picker",
