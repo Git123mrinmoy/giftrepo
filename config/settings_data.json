@@ -173,6 +173,27 @@
       },
       "about": {
         "type": "about",
+        "blocks": {
+          "ed62e0a3-d9a0-41f4-b880-950e06b5247e": {
+            "type": "text",
+            "settings": {
+              "text_heading": "Quick order",
+              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. since the 1500s, when an unknown printer took a galley of type.\"<\/p>",
+              "image": "shopify:\/\/shop_images\/cart-icon.png"
+            }
+          },
+          "7a3d3895-6837-4cd3-8aa4-925ddd68d894": {
+            "type": "text",
+            "settings": {
+              "text_heading": "Heading",
+              "subtext": "<p>Subtext Details<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "ed62e0a3-d9a0-41f4-b880-950e06b5247e",
+          "7a3d3895-6837-4cd3-8aa4-925ddd68d894"
+        ],
         "settings": {
           "about_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg",
           "about_left_img": "shopify:\/\/shop_images\/thelastminutegifts-left-img.png",
