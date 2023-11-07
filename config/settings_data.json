@@ -130,6 +130,7 @@
     "custom_collection3": "frontpage",
     "custom_collection4_img": "shopify:\/\/shop_images\/gifts-add-img4.jpg",
     "custom_collection4": "best-seller",
+    "about_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg",
     "footer_phone": "650-440-5858",
     "footer_address": "2899 Bethany Road, San Ramon, CA, USA, 94582",
     "footer_fb_link": "#",
@@ -162,6 +163,11 @@
       },
       "home": {
         "type": "home",
+        "settings": {
+        }
+      },
+      "about": {
+        "type": "about",
         "settings": {
         }
       }
