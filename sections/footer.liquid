@@ -1,3 +1,136 @@
+<section class="newsletter-instagram-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 mb-4">
+        <div class="newsletter-wrap">
+          <div class="title mb-4" data-aos="fade-down">
+            {{ settings.newsletter }}
+          </div>
+          {% form 'customer', class: 'newsletter-form' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="newsletter-frm">
+              <div class="input-text">
+                <input
+                  class="form-control"
+                  type="text"
+                  value="{{ form.email }}"
+                  name="contact[email]"
+                  placeholder="Your email address"
+                  required
+                >
+              </div>
+              <div class="submit">
+                <input class="btn btn-gradient" type="submit" name="commit" value="Subscribe">
+              </div>
+              {%- if form.errors -%}
+                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                  {%- render 'icon-error' -%}
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </small>
+              {%- endif -%}
+            </div>
+            {%- if form.posted_successfully? -%}
+              <h3
+                class="newsletter-form__message newsletter-form__message--success form__message"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus
+              >
+                {% render 'icon-success' -%}
+                {{- 'newsletter.success' | t }}
+              </h3>
+            {%- endif -%}
+          {% endform %}
+        </div>
+      </div>
+      <div class="col-12 col-md-8 offset-md-2">
+        <div class="instagram-feed-wrap">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img1.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img1.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img2.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img2.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img3.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img3.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img4.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img4.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img5.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img5.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img6.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img6.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg p-0">
+              <div class="instagram-list">
+                {% comment %} <img class="img-fluid" src="images/instagram-feed-img7.jpg" alt=""> {% endcomment %}
+                <img class="img-fluid" src="{{ 'instagram-feed-img7.jpg' | asset_url }}" alt="">
+                <div class="instagram-hover">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer-wrapper">
     <div class="container">
       <div class="row">

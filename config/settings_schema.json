@@ -1549,10 +1549,6 @@
       {
         "type": "collection",
         "id": "custom_collection4"
-      },
-      {
-        "type": "textarea",
-        "id": "newsletter"
       }
     ]
   },
@@ -1623,6 +1619,10 @@
         "type": "text",
         "label": "Copyright Text",
         "id": "footer_copyright"
+      },
+      {
+        "type": "textarea",
+        "id": "newsletter"
       }
     ]
   }
