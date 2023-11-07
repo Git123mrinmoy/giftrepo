@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>About Us</h1>
+          <h1>{{ page_title }}</h1>
         </div>
       </div>
     </div>
@@ -16,20 +16,12 @@
     <div class="row align-items-center">
       <div class="col-12 col-md-5 mb-4 mb-md-0" data-aos="fade-left">
         <div class="thelastminutegifts-left-img">
-          <img class="img-fluid" src="images/thelastminutegifts-left-img.png" alt="">
+          <img class="img-fluid" src="{{ settings.about_left_img | img_url: 'master' }}" alt="">
         </div>
       </div>
       <div class="col-12 col-md-7" data-aos="fade-right">
         <div class="thelastminutegifts-right-content">
-          <h3>
-            Welcome To <br>
-            Thelastminutegifts Shop
-          </h3>
-          <p>
-            You'll discover a curated collection of handpicked treasures that cater to every taste and occasion. Whether
-            you're celebrating a special milestone, expressing your heartfelt appreciation, or simply indulging in a
-            little self-pampering, our diverse range of gifts is designed to inspire and delight.
-          </p>
+          {{ settings.right_text }}
           <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
@@ -42,18 +34,13 @@
     <div class="row align-items-center">
       <div class="col-12 col-md-7 mb-4" data-aos="fade-left">
         <div class="gifts-for-children-content">
-          <h5>Sale up to 50% off</h5>
-          <h3>Gifts For Children</h3>
-          <p>
-            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-            pellentesque felis.
-          </p>
+          {{ settings.left_text }}
           <a class="btn btn-info-light" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-12 col-md-5" data-aos="fade-right">
         <div class="gifts-children-right-img">
-          <img class="img-fluid" src="images/gifts-children-right-img1.png" alt="">
+          <img class="img-fluid" src="{{ settings.about_right_img | img_url: 'master' }}" alt="">
         </div>
       </div>
     </div>
