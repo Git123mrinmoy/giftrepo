@@ -55,42 +55,19 @@
           <h3>How It Works</h3>
         </div>
       </div>
-      <div class="col-12 col-md-4 mb-4 aos-init aos-animate" data-aos="zoom-in">
-        <div class="how-it-work-wrap">
-          <div class="icon">
-            <i class="fa-solid fa-cart-plus"></i>
+      {% for block in section.settings.blocks %}
+        <div class="col-12 col-md-4 mb-4 aos-init aos-animate" data-aos="zoom-in">
+          <div class="how-it-work-wrap">
+            <div class="icon">
+              <i class="{{ block.icon_class }}"></i>
+            </div>
+            <h4>{{ block.text_heading }}</h4>
+            <p>
+              {{ block.subtext | richtext }}
+            </p>
           </div>
-          <h4>Quick order</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever. since the 1500s, when an unknown printer took a galley of type."
-          </p>
         </div>
-      </div>
-      <div class="col-12 col-md-4 mb-4 aos-init aos-animate" data-aos="zoom-in">
-        <div class="how-it-work-wrap">
-          <div class="icon">
-            <i class="fa-solid fa-truck"></i>
-          </div>
-          <h4>Free delivery</h4>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-            some form, by injected humour. or randomised words which don't look even slightly believable."
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-4 aos-init aos-animate" data-aos="zoom-in">
-        <div class="how-it-work-wrap">
-          <div class="icon">
-            <i class="fa-solid fa-truck-arrow-right"></i>
-          </div>
-          <h4>50 day return</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever. since the 1500s, when an unknown printer took a galley of type."
-          </p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
