@@ -16,12 +16,12 @@
     <div class="row align-items-center">
       <div class="col-12 col-md-5 mb-4 mb-md-0" data-aos="fade-left">
         <div class="thelastminutegifts-left-img">
-          <img class="img-fluid" src="{{ settings.about_left_img | img_url: 'master' }}" alt="">
+          <img class="img-fluid" src="{{ section.settings.about_left_img | img_url: 'master' }}" alt="">
         </div>
       </div>
       <div class="col-12 col-md-7" data-aos="fade-right">
         <div class="thelastminutegifts-right-content">
-          {{ settings.right_text }}
+          {{ section.settings.right_text }}
           <a class="btn btn-gradient" href="/collections">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
@@ -34,13 +34,13 @@
     <div class="row align-items-center">
       <div class="col-12 col-md-7 mb-4" data-aos="fade-left">
         <div class="gifts-for-children-content">
-          {{ settings.left_text }}
+          {{ section.settings.left_text }}
           <a class="btn btn-info-light" href="/collections">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-12 col-md-5" data-aos="fade-right">
         <div class="gifts-children-right-img">
-          <img class="img-fluid" src="{{ settings.about_right_img | img_url: 'master' }}" alt="">
+          <img class="img-fluid" src="{{ section.settings.about_right_img | img_url: 'master' }}" alt="">
         </div>
       </div>
     </div>
