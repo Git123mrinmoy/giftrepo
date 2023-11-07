@@ -28,24 +28,24 @@
       </head>
     
       <body>
-        <header class="header-wrapper">
+        <header class="header-wrapper {% if page_title != blank %} inner-header {% endif %}">
           <div class="container">
             <div class="row">
               <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
                   <div class="logo-wrap">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ url_for_home }}">
                       {% comment %} <img class="img-fluid" src="images/logo.png" alt=""> {% endcomment %}
-                      <a href="{{ url_for_home }}">
+                      
                         <img src="{{ settings.logo | img_url: 'master' }}" alt="{{ shop.name }}">
-                      </a>
+                  
                     </a>
                   </div>
     
                   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         {% for link in linklists['main-menu'].links %}
-                            <li class="nav-item active">
+                            <li class="nav-item {% if link.url == request.path %}active{% endif %}">
                                 <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
                             </li>
                           {% endfor %}                     
