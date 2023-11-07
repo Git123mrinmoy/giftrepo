@@ -1516,6 +1516,21 @@
         "type": "image_picker",
         "label": "Banner Image",
         "id": "banner_image1"
+      },
+      {
+        "type": "textarea",
+        "label": "Banner Heading",
+        "id": "banner_heading2"
+      },
+      {
+        "type": "text",
+        "label": "Shop Now button link",
+        "id": "button_link2"
+      },
+      {
+        "type": "image_picker",
+        "label": "Banner Image",
+        "id": "banner_image2"
       }
     ]
   },

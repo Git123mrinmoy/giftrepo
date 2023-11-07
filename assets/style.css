@@ -465,7 +465,7 @@ ul {
   width: 100%;
   padding: 60px 0px;
   background-color: #fff5f7;
-  background-image: url('{{'best-seller-section-bg.png'| asset_url}}');
+  background-image: url(best-seller-section-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -606,7 +606,7 @@ ul {
   position: relative;
   width: 100%;
   padding: 60px 0px;
-  background-image: url('{{'gifts-for-children-section-bg.png'| asset_url}}');
+  background-image: url(gifts-for-children-section-bg.png);
   background-repeat: repeat;
   background-size: contain;
   border-radius: 25px;
@@ -659,7 +659,7 @@ ul {
   top: -25%;
   width: 180px;
   height: 180px;
-  background-image: url('{{'gifts-for-children-toy.png'| asset_url}}');
+  background-image: url(gifts-for-children-toy.png);
   background-repeat: no-repeat;
   background-size: 100%;
   animation: movingX 8s linear infinite;
@@ -825,7 +825,7 @@ ul {
   position: relative;
   width: 100%;
   padding: 60px 0px;
-  background-image: url('{{'newsletter-instagram-bg.png'| asset_url}}');
+  background-image: url(newsletter-instagram-bg.png);
   background-repeat: repeat;
   background-size: contain;
 }
@@ -1537,7 +1537,7 @@ ul {
   padding: 20px 20px;
   border-radius: 8px;
   background-color: #fff5f7;
-  background-image: url('{{'best-seller-section-bg.png'| asset_url}}');
+  background-image: url(best-seller-section-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
