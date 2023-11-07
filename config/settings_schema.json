@@ -1553,36 +1553,6 @@
     ]
   },
   {
-    "name": "About Setting",
-    "settings": [
-      {
-        "type": "image_picker",
-        "label": "Banner Image",
-        "id": "about_banner"
-      },
-      {
-        "type": "image_picker",
-        "label": "Left Image",
-        "id": "about_left_img"
-      },
-      {
-        "type": "textarea",
-        "label": "Right Text",
-        "id": "right_text"
-      },
-      {
-        "type": "image_picker",
-        "label": "Right Image",
-        "id": "about_right_img"
-      },
-      {
-        "type": "textarea",
-        "label": "Left Text",
-        "id": "left_text"
-      }
-    ]
-  },
-  {
     "name": "Footer Setting",
     "settings": [
       {

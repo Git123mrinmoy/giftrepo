@@ -174,11 +174,6 @@
       "about": {
         "type": "about",
         "settings": {
-          "about_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg",
-          "about_left_img": "shopify:\/\/shop_images\/thelastminutegifts-left-img.png",
-          "right_text": "<h3>Welcome To <br>\n              Thelastminutegifts Shop<\/h3>\n            <p>You'll discover a curated collection of handpicked treasures that cater to every taste and occasion.\n              Whether you're celebrating a special milestone, expressing your heartfelt appreciation, or simply\n              indulging in a little self-pampering, our diverse range of gifts is designed to inspire and delight.<\/p>",
-          "about_right_img": "shopify:\/\/shop_images\/gifts-children-right-img1.png",
-          "left_text": "<h5>Sale up to 50% off <\/h5>\n            <h3>Gifts For Children<\/h3>\n            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim\n              pellentesque felis.<\/p>"
         }
       }
     },
