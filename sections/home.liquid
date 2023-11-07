@@ -115,8 +115,8 @@
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
-                          <i class="fa-solid fa-cart-arrow-down" id="add_icon"></i>
+                        <a href="javascript:void(0)" id="add_icon">
+                          <i class="fa-solid fa-cart-arrow-down"></i>
                         </a>
                         <form action="/cart/add" method="post" enctype="multipart/form-data">
                           <input type="hidden" name="id" value="{{ product.variants.first.id }}">
@@ -135,7 +135,7 @@
                   <a href="{{ product.url }}">
                     <h3>{{ product.title }}</h3>
                   </a>
-                  <div class="qty">( 2pcs )</div>
+                  <div class="qty">( {{ product.variants.first.inventory_quantity }}pcs )</div>
                   <div class="price">
                     {{ product.price | money }}
                     {% if product.compare_at_price != '' %}
@@ -162,7 +162,7 @@
       {% endfor %}
 
       <div class="col-12 text-center mt-4">
-        <a class="btn btn-gradient" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-gradient" href="/collections">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
@@ -178,13 +178,15 @@
             Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
             pellentesque felis.
           </p>
-          <a class="btn btn-info-light" href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-info-light" href="{{ settings.button_link }}"
+            >Shop Now <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </div>
       </div>
       <div class="col-12 col-md-5" data-aos="fade-right">
         <div class="gifts-children-right-img">
           {% comment %} <img class="img-fluid" src="images/gifts-children-right-img1.png" alt=""> {% endcomment %}
-          <img class="img-fluid" src="{{ 'gifts-children-right-img1.png' | asset_url }}" alt="">
+          <img class="img-fluid" src="{{ settings.banner_image1 | img_url: 'master' }}" alt="">
         </div>
       </div>
     </div>
