@@ -1557,6 +1557,16 @@
     ]
   },
   {
+    "name": "About Setting",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Banner Image",
+        "id": "about_banner"
+      }
+    ]
+  },
+  {
     "name": "Footer Setting",
     "settings": [
       {
