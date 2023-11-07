@@ -188,11 +188,19 @@
               "text_heading": "Free delivery",
               "subtext": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. or randomised words which don't look even slightly believable.\"<\/p>"
             }
+          },
+          "b3a55334-d7da-48c1-9108-cd9b1ac9b7ef": {
+            "type": "text",
+            "settings": {
+              "text_heading": "50 day return",
+              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. since the 1500s, when an unknown printer took a galley of type.\"<\/p>"
+            }
           }
         },
         "block_order": [
           "ed62e0a3-d9a0-41f4-b880-950e06b5247e",
-          "7a3d3895-6837-4cd3-8aa4-925ddd68d894"
+          "7a3d3895-6837-4cd3-8aa4-925ddd68d894",
+          "b3a55334-d7da-48c1-9108-cd9b1ac9b7ef"
         ],
         "settings": {
           "about_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg",
