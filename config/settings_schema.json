@@ -1622,7 +1622,8 @@
       },
       {
         "type": "textarea",
-        "id": "newsletter"
+        "id": "newsletter",
+        "label": "Newsletter Text"
       }
     ]
   }
