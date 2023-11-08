@@ -55,15 +55,15 @@
           <h3>How It Works</h3>
         </div>
       </div>
-      {% for block in section.settings.blocks %}
+      {% for block in section.blocks %}
         <div class="col-12 col-md-4 mb-4 aos-init aos-animate" data-aos="zoom-in">
           <div class="how-it-work-wrap">
             <div class="icon">
-              <i class="{{ block.icon_class }}"></i>
+              <i class="{{ block.settings.icon_class }}"></i>
             </div>
-            <h4>{{ block.text_heading }}</h4>
+            <h4>{{ block.settings.text_heading }}</h4>
             <p>
-              {{ block.subtext | richtext }}
+              {{ block.settings.subtext | richtext }}
             </p>
           </div>
         </div>
