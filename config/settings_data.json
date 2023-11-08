@@ -223,6 +223,12 @@
         "settings": {
           "sale_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg"
         }
+      },
+      "shop": {
+        "type": "shop",
+        "settings": {
+          "shop_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg"
+        }
       }
     },
     "content_for_index": [
