@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Contacts</h1>
+          <h1>{{ page_title }}</h1>
         </div>
       </div>
     </div>
@@ -19,25 +19,41 @@
           <div class="comon-title mb-4">
             <h3>Contact us today!</h3>
           </div>
-          <form>
+
+          {% form 'contact' %}
+            {% if form.posted_successfully? %}
+              <div class="successForm feedback note-success">
+                <p class="msgsuccess">{{ 'templates.contact.form.post_success' | t }}</p>
+              </div>
+            {% endif %}
             <div class="contact-form-inner">
               <div class="form-group mb-3">
-                <input type="text" id="" class="form-control" placeholder="Name">
+                {% comment %} <input type="text" id="" class="form-control" placeholder="Name"> {% endcomment %}
+                <input type="text" name="contact[name]" class="form-control" placeholder="Name" required>
               </div>
               <div class="form-group mb-3">
-                <input type="email" id="" class="form-control" placeholder="Email">
+                {% comment %} <input type="email" id="" class="form-control" placeholder="Email"> {% endcomment %}
+                <input type="email" name="contact[email]" class="form-control" placeholder="Email" required>
               </div>
               <div class="form-group mb-3">
-                <input type="text" id="" class="form-control" placeholder="Phone">
+                {% comment %} <input type="text" id="" class="form-control" placeholder="Phone"> {% endcomment %}
+                <input type="tel" class="form-control" name="contact[phone]" placeholder="Phone">
               </div>
               <div class="form-group mb-3">
-                <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                {% comment %} <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea> {% endcomment %}
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="comment"
+                  name="contact[message]"
+                  placeholder="Message"
+                ></textarea>
               </div>
               <div class="form-group">
                 <input class="btn btn-gradient" type="submit" name="" value="Send Message">
               </div>
             </div>
-          </form>
+          {% endform %}
         </div>
       </div>
     </div>
