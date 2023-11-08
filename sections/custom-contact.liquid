@@ -36,7 +36,15 @@
               </div>
               <div class="form-group mb-3">
                 {% comment %} <input type="text" id="" class="form-control" placeholder="Phone"> {% endcomment %}
-                <input type="tel" class="form-control" name="contact[phone]" placeholder="Phone">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="contact[phone]"
+                  pattern="[0-9]{10}"
+                  placeholder="Phone"
+                >
+                <span class="error">Please enter a valid 10-digit phone number.</span>
               </div>
               <div class="form-group mb-3">
                 {% comment %} <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea> {% endcomment %}

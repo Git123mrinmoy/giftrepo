@@ -260,5 +260,18 @@
       });
     });
     </script>
+
+    <script>
+      var phoneInput = document.getElementById("phone");
+      var errorSpan = document.querySelector(".error");
+  
+      phoneInput.addEventListener("input", function() {
+        if (phoneInput.validity.patternMismatch) {
+          errorSpan.style.display = "inline";
+        } else {
+          errorSpan.style.display = "none";
+        }
+      });
+    </script>
 </body>
 </html>
