@@ -217,6 +217,12 @@
         "settings": {
           "contact_banner": "shopify:\/\/shop_images\/inner-banner-contact.jpg"
         }
+      },
+      "sale": {
+        "type": "sale",
+        "settings": {
+          "sale_banner": "shopify:\/\/shop_images\/inner-banner-about.jpg"
+        }
       }
     },
     "content_for_index": [
