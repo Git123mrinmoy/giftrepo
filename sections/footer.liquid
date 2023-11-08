@@ -272,6 +272,28 @@
           errorSpan.style.display = "none";
         }
       });
+
+      var emailInput = document.getElementById("email");
+      var errorSpan1 = document.querySelector(".error1");
+
+      emailInput.addEventListener("input", function() {
+        if (emailInput.validity.typeMismatch) {
+          errorSpan1.style.display = "inline";
+        } else {
+          errorSpan1.style.display = "none";
+        }
+      });
+
+      var namenput = document.getElementById("name");
+      var errorSpan2 = document.querySelector(".error2");
+
+      namenput.addEventListener("input", function() {
+        if (namenput.validity.patternMismatch) {
+          errorSpan2.style.display = "inline";
+        } else {
+          errorSpan2.style.display = "none";
+        }
+      });
     </script>
 </body>
 </html>
