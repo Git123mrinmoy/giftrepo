@@ -142,11 +142,13 @@
                       <del>{{ product.compare_at_price | money }}</del>
                     {% endif %}
                   </div>
-                  <div class="rating-wrap">
-                    {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                    <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                    <span>( 5.2 K Reviews )</span>
-                  </div>
+                  {% comment %}
+                    <div class="rating-wrap">
+                      {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                      <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                      <span>( 5.2 K Reviews )</span>
+                    </div>
+                  {% endcomment %}
 
                   <form action="/cart/add" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
@@ -255,11 +257,13 @@
                           <del>{{ product.compare_at_price | money }}</del>
                         {% endif %}
                       </div>
-                      <div class="rating-wrap">
-                        {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                        <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                        <span>( 5.2 K Reviews )</span>
-                      </div>
+                      {% comment %}
+                        <div class="rating-wrap">
+                          {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                          <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                          <span>( 5.2 K Reviews )</span>
+                        </div>
+                      {% endcomment %}
                       <form action="/cart/add" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="{{ product.variants.first.id }}">
                         <div class="shop-btn-wrap">
@@ -365,11 +369,13 @@
                           <del>{{ product.compare_at_price | money }}</del>
                         {% endif %}
                       </div>
-                      <div class="rating-wrap">
-                        {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
-                        <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
-                        <span>( 5.2 K Reviews )</span>
-                      </div>
+                      {% comment %}
+                        <div class="rating-wrap">
+                          {% comment %} <img class="img-fluid" src="images/rating-img.png" alt=""> {% endcomment %}
+                          <img class="img-fluid" src="{{ 'rating-img.png' | asset_url }}" alt="">
+                          <span>( 5.2 K Reviews )</span>
+                        </div>
+                      {% endcomment %}
                       <form action="/cart/add" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="{{ product.variants.first.id }}">
                         <div class="shop-btn-wrap">
