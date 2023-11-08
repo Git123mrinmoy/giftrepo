@@ -211,6 +211,12 @@
           "about_right_img": "shopify:\/\/shop_images\/gifts-children-right-img1.png",
           "left_text": "<h5>Sale up to 50% off <\/h5>\n            <h3>Gifts For Children<\/h3>\n            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim\n              pellentesque felis.<\/p>"
         }
+      },
+      "custom-contact": {
+        "type": "custom-contact",
+        "settings": {
+          "contact_banner": "shopify:\/\/shop_images\/inner-banner-contact.jpg"
+        }
       }
     },
     "content_for_index": [
