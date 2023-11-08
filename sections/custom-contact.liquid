@@ -22,8 +22,8 @@
 
           {% form 'contact' %}
             {% if form.posted_successfully? %}
-              <div class="successForm feedback note-success">
-                <p class="msgsuccess">{{ 'templates.contact.form.post_success' | t }}</p>
+              <div class="form-group">
+                <p class="btn-gradient">{{ 'templates.contact.form.post_success' | t }}</p>
               </div>
             {% endif %}
             <div class="contact-form-inner">
