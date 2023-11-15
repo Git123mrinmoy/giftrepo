@@ -1,14 +1,394 @@
+<section class="inner-banner">
+  <img class="img-fluid" src="{{ section.settings.sale_banner | img_url: 'master' }}" alt="">
+  <div class="inner-banner-cont">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>{{ page_title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="product-details-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-5 mb-4">
+        <div class="product-left-wrap">
+          <div class="product-big-slider" id="product-big-slider">
+            <div class="productbig-sld-items">
+              <div class="product-big-img">
+                <img class="img-fluid" src="images/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="productbig-sld-items">
+              <div class="product-big-img">
+                <img class="img-fluid" src="images/product-img2.jpg" alt="">
+              </div>
+            </div>
+            <div class="productbig-sld-items">
+              <div class="product-big-img">
+                <img class="img-fluid" src="images/product-img3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="product-thumbnail-slider" id="product-thumbnail-slider">
+            <div class="prd-thumbnail-sld-items">
+              <div class="thumbnail-img">
+                <img class="img-fluid" src="images/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="prd-thumbnail-sld-items">
+              <div class="thumbnail-img">
+                <img class="img-fluid" src="images/product-img2.jpg" alt="">
+              </div>
+            </div>
+            <div class="prd-thumbnail-sld-items">
+              <div class="thumbnail-img">
+                <img class="img-fluid" src="images/product-img3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 mb-4">
+        <div class="product-content">
+          <h3>Heritage Shoe</h3>
+          <h5 class="price">$40.00</h5>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+
+          <h4>Quantity</h4>
+          <div id="field1" class="count-bx mb-3">
+            <button id="sub" class="sub">-</button>
+            <input id="1" value="1" min="1" max="3">
+            <button id="add" class="add">+</button>
+          </div>
+
+          <a href="#" class="btn btn-gradient">Add To Cart</a>
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <div class="review-tab-wrapper">
+          <ul class="nav nav-tabs mb-3" id="ReviewTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">Review</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="ReviewTabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at tempor. Nullam
+                pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus quis
+                pellentesque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at tempor. Nullam
+                pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus quis
+                pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at
+                tempor. Nullam pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus
+                quis pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at
+                tempor. Nullam pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus
+                quis pellentesque.
+              </p>
+            </div>
+
+            <div class="tab-pane fade" id="tab2" role="tabpanel">
+              <div class="review-bx">
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <h4>James <span>on Jun 15, 2022</span></h4>
+                <p>Sonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="review-bx">
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <h4>William <span>on Aug 20, 2022</span></h4>
+                <p>Sonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+              <div class="review-form-wrap">
+                <h4>BE THE FIRST TO REVIEW “Medium Dark Ground”</h4>
+                <div class="row">
+                  <div class="col-12 col-md-12 mb-3">
+                    <div class="rating-wrap">
+                      <label>Your rating </label>
+                      <ul class="rate-area">
+                        <input type="radio" id="5-star" name="rating" value="5"
+                        ><label
+                          for="5-star"
+                          title="Amazing"
+                          >5 stars</label
+                        >
+                        <input type="radio" id="4-star" name="rating" value="4"
+                        ><label for="4-star" title="Good">4 stars</label>
+                        <input type="radio" id="3-star" name="rating" value="3"
+                        ><label
+                          for="3-star"
+                          title="Average"
+                          >3 stars</label
+                        >
+                        <input type="radio" id="2-star" name="rating" value="2"
+                        ><label
+                          for="2-star"
+                          title="Not Good"
+                          >2 stars</label
+                        >
+                        <input type="radio" id="1-star" name="rating" value="1"
+                        ><label for="1-star" title="Bad">1 star</label>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <div class="form-group">
+                      <label>Name *</label>
+                      <input class="form-control" type="text" name="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <div class="form-group">
+                      <label>Email *</label>
+                      <input class="form-control" type="email" name="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 mb-3">
+                    <div class="form-group">
+                      <label>Your review *</label>
+                      <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12">
+                    <input class="btn btn-gradient" type="submit" name="" value="Submit">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 ">
+        <div class="related-product-wrap">
+          <div class="comon-title text-center mb-4">
+            <h3>Related products</h3>
+          </div>
+
+          <div class="related-products-slider" id="related-products-slider">
+            <div class="related-products-sld-items">
+              <div class="product-wrap">
+                <div class="prd-img">
+                  <div class="offer-tag">-20% Off</div>
+                  <a href="product-details.html">
+                    <img class="img-fluid" src="images/product-img1.jpg" alt="">
+                  </a>
+                  <div class="product-cart-wishlist">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <h3><a href="product-details.html">Gift Basket - Ultimate Size</a></h3>
+                  <div class="qty">( 2pcs )</div>
+                  <div class="price">$20.10 <del>$30.25</del></div>
+                  <div class="rating-wrap">
+                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
+                  </div>
+                  <div class="shop-btn-wrap">
+                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="related-products-sld-items">
+              <div class="product-wrap">
+                <div class="prd-img">
+                  <a href="product-details.html">
+                    <img class="img-fluid" src="images/product-img2.jpg" alt="">
+                  </a>
+                  <div class="product-cart-wishlist">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <h3><a href="product-details.html">Faceless Portrait, custom illustration</a></h3>
+                  <div class="price">$20.10 <del>$30.25</del></div>
+                  <div class="rating-wrap">
+                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
+                  </div>
+                  <div class="shop-btn-wrap">
+                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="related-products-sld-items">
+              <div class="product-wrap">
+                <div class="prd-img">
+                  <div class="offer-tag">-20% Off</div>
+                  <a href="product-details.html">
+                    <img class="img-fluid" src="images/product-img3.jpg" alt="">
+                  </a>
+                  <div class="product-cart-wishlist">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <h3><a href="product-details.html">Personalized Girls jewelry box</a></h3>
+                  <div class="qty">( 2pcs )</div>
+                  <div class="price">$20.10 <del>$30.25</del></div>
+                  <div class="rating-wrap">
+                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
+                  </div>
+                  <div class="shop-btn-wrap">
+                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="related-products-sld-items">
+              <div class="product-wrap">
+                <div class="prd-img">
+                  <div class="offer-tag">-20% Off</div>
+                  <a href="product-details.html">
+                    <img class="img-fluid" src="images/product-img4.jpg" alt="">
+                  </a>
+                  <div class="product-cart-wishlist">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <h3><a href="product-details.html">Song Plaque With Stand</a></h3>
+                  <div class="qty">(4-6 pcs,)</div>
+                  <div class="price">$20.10 <del>$30.25</del></div>
+                  <div class="rating-wrap">
+                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
+                  </div>
+                  <div class="shop-btn-wrap">
+                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Product Details Setting",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Banner Image",
+      "id": "product_banner"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
