@@ -233,7 +233,7 @@
       "product-details-custom": {
         "type": "product-details-custom",
         "settings": {
-          "product_banner": "shopify:\/\/shop_images\/product-img3.jpg"
+          "product_banner": "shopify:\/\/shop_images\/inner-banner-shop.jpg"
         }
       }
     },
