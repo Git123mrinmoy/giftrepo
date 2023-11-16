@@ -235,6 +235,12 @@
         "settings": {
           "product_banner": "shopify:\/\/shop_images\/inner-banner-shop.jpg"
         }
+      },
+      "collection-custom": {
+        "type": "collection-custom",
+        "settings": {
+          "collection_banner": "shopify:\/\/shop_images\/inner-banner-shop.jpg"
+        }
       }
     },
     "content_for_index": [
