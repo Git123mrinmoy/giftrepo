@@ -103,7 +103,7 @@
               <div class="product-wrap">
                 <div class="prd-img">
                   <div class="offer-tag">-20% Off</div>
-                  <a href="/pages/product-details-custom?id={{ product.id }}">
+                  <a href="{{ product.url}}?view=custom">
                     {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
                     <img class="img-fluid" src="{{ product.featured_image | img_url: 'master' }}" alt="">
                   </a>
@@ -124,7 +124,7 @@
                         </form>
                       </li>
                       <li>
-                        <a href="/pages/product-details-custom?id={{ product.id }}">
+                        <a href="{{ product.url}}?view=custom">
                           <i class="fa-regular fa-eye"></i>
                         </a>
                       </li>
@@ -132,7 +132,7 @@
                   </div>
                 </div>
                 <div class="product-content">
-                  <a href="/pages/product-details-custom?id={{ product.id }}">
+                  <a href="{{ product.url}}?view=custom">
                     <h3>{{ product.title }}</h3>
                   </a>
                   <div class="qty">( {{ product.variants.first.inventory_quantity }}pcs )</div>
@@ -218,7 +218,7 @@
                   <div class="product-wrap">
                     <div class="prd-img">
                       <div class="offer-tag">-20% Off</div>
-                      <a href="/pages/product-details-custom?id={{ product.id }}">
+                      <a href="{{ product.url}}?view=custom">
                         {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
                         <img class="img-fluid" src="{{ product.featured_image | img_url: 'master' }}" alt="">
                       </a>
@@ -239,7 +239,7 @@
                             </form>
                           </li>
                           <li>
-                            <a href="/pages/product-details-custom?id={{ product.id }}">
+                            <a href="{{ product.url}}?view=custom">
                               <i class="fa-regular fa-eye"></i>
                             </a>
                           </li>
@@ -247,7 +247,7 @@
                       </div>
                     </div>
                     <div class="product-content">
-                      <a href="/pages/product-details-custom?id={{ product.id }}">
+                      <a href="{{ product.url}}?view=custom">
                         <h3>{{ product.title }}</h3>
                       </a>
                       <div class="qty">( {{ product.variants.first.inventory_quantity }}pcs )</div>
@@ -330,7 +330,7 @@
                   <div class="product-wrap">
                     <div class="prd-img">
                       <div class="offer-tag">-20% Off</div>
-                      <a href="/pages/product-details-custom?id={{ product.id }}">
+                      <a href="{{ product.url}}?view=custom">
                         {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
                         <img class="img-fluid" src="{{ product.featured_image | img_url: 'master' }}" alt="">
                       </a>
@@ -351,7 +351,7 @@
                             </form>
                           </li>
                           <li>
-                            <a href="/pages/product-details-custom?id={{ product.id }}>
+                            <a href="{{ product.url}}?view=custom">
                               <i class="fa-regular fa-eye"></i>
                             </a>
                           </li>
@@ -359,7 +359,7 @@
                       </div>
                     </div>
                     <div class="product-content">
-                      <a href="/pages/product-details-custom?id={{ product.id }}">
+                      <a href="{{ product.url}}?view=custom">
                         <h3>{{ product.title }}</h3>
                       </a>
                       <div class="qty">( {{ product.variants.first.inventory_quantity }}pcs )</div>

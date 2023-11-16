@@ -40,7 +40,7 @@
                   >
                     {% for product in collection.products %}
                       <li>
-                        <a href="/pages/product-details-custom?id={{ product.id }}">{{ product.title }}</a>
+                        <a href="{{ product.url}}?view=custom">{{ product.title }}</a>
                       </li>
                     {% endfor %}
                   </ul>
@@ -69,7 +69,7 @@
               <div class="product-wrap">
                 <div class="prd-img">
                   {% comment %} <div class="offer-tag">-20% Off</div> {% endcomment %}
-                  <a href="/pages/product-details-custom?id={{ product.id }}">
+                  <a href="{{ product.url}}?view=custom">
                     <img class="img-fluid" src="{{ product.featured_image | img_url: 'master' }}" alt="">
                   </a>
                   <div class="product-cart-wishlist">
@@ -89,7 +89,7 @@
                         </form>
                       </li>
                       <li>
-                        <a href="/pages/product-details-custom?id={{ product.id }}">
+                        <a href="{{ product.url}}?view=custom">
                           <i class="fa-regular fa-eye"></i>
                         </a>
                       </li>

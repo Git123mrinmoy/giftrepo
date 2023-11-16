@@ -11,6 +11,13 @@
   </div>
 </section>
 
+{% comment %}
+  The above code creates a new template for single product pages.
+  You can customize this template to suit your specific design and requirements.
+{% endcomment %}
+
+{% assign product = product %}
+
 <section class="product-details-wrapper">
   <div class="container">
     <div class="row">
@@ -54,22 +61,28 @@
       </div>
       <div class="col-12 col-md-7 mb-4">
         <div class="product-content">
-          <h3>Heritage Shoe</h3>
-          <h5 class="price">$40.00</h5>
+          <h3>{{ product.title }}</h3>
+          <h5 class="price">{{ product.price | money }}</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            {{ product.description }}
           </p>
 
-          <h4>Quantity</h4>
-          <div id="field1" class="count-bx mb-3">
-            <button id="sub" class="sub">-</button>
-            <input id="1" value="1" min="1" max="3">
-            <button id="add" class="add">+</button>
-          </div>
+          {% comment %} <a href="#" class="btn btn-gradient">Add To Cart</a> {% endcomment %}
 
-          <a href="#" class="btn btn-gradient">Add To Cart</a>
+          {% if product.available %}
+            <form action="/cart/add" method="post" enctype="multipart/form-data">
+              <h4>Quantity</h4>
+              <div id="field1" class="count-bx mb-3">
+                <a id="sub" class="sub">-</a>
+                <input id="1" value="1" name="quantity" min="1" max="3">
+                <a id="add" class="add">+</a>
+              </div>
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+              <input type="submit" class="btn btn-gradient" value="Add to Cart">
+            </form>
+          {% else %}
+            <p>This product is currently unavailable.</p>
+          {% endif %}
         </div>
       </div>
       <div class="col-12 mb-4">
