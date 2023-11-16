@@ -24,38 +24,23 @@
       <div class="col-12 col-md-5 mb-4">
         <div class="product-left-wrap">
           <div class="product-big-slider" id="product-big-slider">
-            <div class="productbig-sld-items">
-              <div class="product-big-img">
-                <img class="img-fluid" src="images/product-img1.jpg" alt="">
+            {% for image in product.media %}
+              <div class="productbig-sld-items">
+                <div class="product-big-img">
+                  {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
+                  <img class="img-fluid" src="{{ image | img_url: 'master' }}" alt="{{ product.title }} Image">
+                </div>
               </div>
-            </div>
-            <div class="productbig-sld-items">
-              <div class="product-big-img">
-                <img class="img-fluid" src="images/product-img2.jpg" alt="">
-              </div>
-            </div>
-            <div class="productbig-sld-items">
-              <div class="product-big-img">
-                <img class="img-fluid" src="images/product-img3.jpg" alt="">
-              </div>
-            </div>
+            {% endfor %}
           </div>
           <div class="product-thumbnail-slider" id="product-thumbnail-slider">
-            <div class="prd-thumbnail-sld-items">
-              <div class="thumbnail-img">
-                <img class="img-fluid" src="images/product-img1.jpg" alt="">
+            {% for image in product.media %}
+              <div class="prd-thumbnail-sld-items">
+                <div class="thumbnail-img">
+                  <img class="img-fluid" src="{{ image | img_url: 'master' }}" alt="{{ product.title }} Image">
+                </div>
               </div>
-            </div>
-            <div class="prd-thumbnail-sld-items">
-              <div class="thumbnail-img">
-                <img class="img-fluid" src="images/product-img2.jpg" alt="">
-              </div>
-            </div>
-            <div class="prd-thumbnail-sld-items">
-              <div class="thumbnail-img">
-                <img class="img-fluid" src="images/product-img3.jpg" alt="">
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -64,7 +49,7 @@
           <h3>{{ product.title }}</h3>
           <h5 class="price">{{ product.price | money }}</h5>
           <p>
-            {{ product.description }}
+            {{ product.description | truncatewords: 9 }}
           </p>
 
           {% comment %} <a href="#" class="btn btn-gradient">Add To Cart</a> {% endcomment %}
@@ -91,26 +76,15 @@
             <li class="nav-item">
               <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">Description</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">Review</a>
-            </li>
+            {% comment %}
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">Review</a>
+              </li>
+            {% endcomment %}
           </ul>
           <div class="tab-content" id="ReviewTabContent">
             <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at tempor. Nullam
-                pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus quis
-                pellentesque.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at tempor. Nullam
-                pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus quis
-                pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at
-                tempor. Nullam pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus
-                quis pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula mollis enim at
-                tempor. Nullam pharetra consequat metus, sit amet feugiat ligula tempor non. Fusce ornare maximus purus
-                quis pellentesque.
-              </p>
+              {{ product.description }}
             </div>
 
             <div class="tab-pane fade" id="tab2" role="tabpanel">
@@ -228,164 +202,73 @@
           </div>
 
           <div class="related-products-slider" id="related-products-slider">
-            <div class="related-products-sld-items">
-              <div class="product-wrap">
-                <div class="prd-img">
-                  <div class="offer-tag">-20% Off</div>
-                  <a href="product-details.html">
-                    <img class="img-fluid" src="images/product-img1.jpg" alt="">
-                  </a>
-                  <div class="product-cart-wishlist">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-heart"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-cart-arrow-down"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-eye"></i>
-                        </a>
-                      </li>
-                    </ul>
+            {% assign current_collection = product.collections.first %}
+            {% for product_in_collection in collections[current_collection.handle].products %}
+              {% if product_in_collection.id != product.id %}
+                <!-- Add more details as needed -->
+                <div class="related-products-sld-items">
+                  <div class="product-wrap">
+                    <div class="prd-img">
+                      <div class="offer-tag">-20% Off</div>
+                      <a href="{{ product_in_collection.url}}?view=custom">
+                        {% comment %} <img class="img-fluid" src="images/product-img1.jpg" alt=""> {% endcomment %}
+                        <img
+                          class="img-fluid"
+                          src="{{ product_in_collection.featured_image | img_url: 'master' }}"
+                          alt=""
+                        >
+                      </a>
+                      <div class="product-cart-wishlist">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)" id="add_icon2">
+                              <i class="fa-solid fa-cart-arrow-down"></i>
+                            </a>
+                            <form action="/cart/add" method="post" enctype="multipart/form-data">
+                              <input type="hidden" name="id" value="{{ product_in_collection.variants.first.id }}">
+                              <input type="submit" id="add_button2" value="Add to Cart" style="display:none;">
+                            </form>
+                          </li>
+                          <li>
+                            <a href="{{ product_in_collection.url}}?view=custom">
+                              <i class="fa-regular fa-eye"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-content">
+                      <h3>
+                        <a href="product-details.html">{{ product_in_collection.title }}</a>
+                      </h3>
+                      <div class="qty">( {{ product_in_collection.variants.first.inventory_quantity }}pcs )</div>
+                      <div class="price">
+                        {{ product.price | money }}
+                        {% if product.compare_at_price != '' %}
+                          <del>{{ product.compare_at_price | money }}</del>
+                        {% endif %}
+                      </div>
+                      {% comment %}
+                        <div class="rating-wrap">
+                          <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
+                        </div>
+                      {% endcomment %}
+                      <form action="/cart/add" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                        <div class="shop-btn-wrap">
+                          <input class="btn shop-btn" type="submit" value="Buy Now!">
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-                <div class="product-content">
-                  <h3><a href="product-details.html">Gift Basket - Ultimate Size</a></h3>
-                  <div class="qty">( 2pcs )</div>
-                  <div class="price">$20.10 <del>$30.25</del></div>
-                  <div class="rating-wrap">
-                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
-                  </div>
-                  <div class="shop-btn-wrap">
-                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="related-products-sld-items">
-              <div class="product-wrap">
-                <div class="prd-img">
-                  <a href="product-details.html">
-                    <img class="img-fluid" src="images/product-img2.jpg" alt="">
-                  </a>
-                  <div class="product-cart-wishlist">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-heart"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-cart-arrow-down"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-eye"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="product-content">
-                  <h3><a href="product-details.html">Faceless Portrait, custom illustration</a></h3>
-                  <div class="price">$20.10 <del>$30.25</del></div>
-                  <div class="rating-wrap">
-                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
-                  </div>
-                  <div class="shop-btn-wrap">
-                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="related-products-sld-items">
-              <div class="product-wrap">
-                <div class="prd-img">
-                  <div class="offer-tag">-20% Off</div>
-                  <a href="product-details.html">
-                    <img class="img-fluid" src="images/product-img3.jpg" alt="">
-                  </a>
-                  <div class="product-cart-wishlist">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-heart"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-cart-arrow-down"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-eye"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="product-content">
-                  <h3><a href="product-details.html">Personalized Girls jewelry box</a></h3>
-                  <div class="qty">( 2pcs )</div>
-                  <div class="price">$20.10 <del>$30.25</del></div>
-                  <div class="rating-wrap">
-                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
-                  </div>
-                  <div class="shop-btn-wrap">
-                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="related-products-sld-items">
-              <div class="product-wrap">
-                <div class="prd-img">
-                  <div class="offer-tag">-20% Off</div>
-                  <a href="product-details.html">
-                    <img class="img-fluid" src="images/product-img4.jpg" alt="">
-                  </a>
-                  <div class="product-cart-wishlist">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-heart"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-cart-arrow-down"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-regular fa-eye"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="product-content">
-                  <h3><a href="product-details.html">Song Plaque With Stand</a></h3>
-                  <div class="qty">(4-6 pcs,)</div>
-                  <div class="price">$20.10 <del>$30.25</del></div>
-                  <div class="rating-wrap">
-                    <img class="img-fluid" src="images/rating-img.png" alt=""> <span>( 5.2 K Reviews )</span>
-                  </div>
-                  <div class="shop-btn-wrap">
-                    <a class="btn shop-btn" href="product-details.html">Shop Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
