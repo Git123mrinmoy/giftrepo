@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>{{ collection.title }}</h1>
+          <h1>{{ collection.titl }}</h1>
         </div>
       </div>
     </div>
@@ -19,6 +19,14 @@
           <div class="category-main-wrap">
             <h3 class="sidebar-title">Categories</h3>
             <ul class="left-category-wrap">
+              {% assign current_collection = product.collections.first %}
+      {% for product_in_collection in collections[current_collection.handle].products %}
+        {% if product_in_collection.id != product.id %}
+          <h2>{{ product_in_collection.title }}</h2>
+          <p>{{ product_in_collection.price | money }}</p>
+          <!-- Add more details as needed -->
+        {% endif %}
+      {% endfor %}
               {% assign counter = 0 %}
               {% for collection in collections %}
                 {% assign counter = counter | plus: 1 %}
