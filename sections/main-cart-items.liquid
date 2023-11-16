@@ -25,6 +25,19 @@
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
+<section class="inner-banner">
+  <img class="img-fluid" src="{{ section.settings.sale_banner | img_url: 'master' }}" alt="">
+  <div class="inner-banner-cont">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>{{ page_title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link">
@@ -483,6 +496,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "image_picker",
+      "label": "Banner Image",
+      "id": "cart_banner"
     }
   ]
 }

@@ -229,7 +229,7 @@
                             <a href="javascript:void(0)" id="add_icon2">
                               <i class="fa-solid fa-cart-arrow-down"></i>
                             </a>
-                            <form action="/cart/add" method="post" enctype="multipart/form-data">
+                            <form action="/cart/add?view=custom" method="post" enctype="multipart/form-data">
                               <input type="hidden" name="id" value="{{ product_in_collection.variants.first.id }}">
                               <input type="submit" id="add_button2" value="Add to Cart" style="display:none;">
                             </form>
