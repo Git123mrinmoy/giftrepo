@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>{{ collection.titl }}</h1>
+          <h1>{{ collection.title }}</h1>
         </div>
       </div>
     </div>
@@ -19,34 +19,26 @@
           <div class="category-main-wrap">
             <h3 class="sidebar-title">Categories</h3>
             <ul class="left-category-wrap">
-              {% assign current_collection = product.collections.first %}
-      {% for product_in_collection in collections[current_collection.handle].products %}
-        {% if product_in_collection.id != product.id %}
-          <h2>{{ product_in_collection.title }}</h2>
-          <p>{{ product_in_collection.price | money }}</p>
-          <!-- Add more details as needed -->
-        {% endif %}
-      {% endfor %}
               {% assign counter = 0 %}
-              {% for collection in collections %}
+              {% for collection1 in collections %}
                 {% assign counter = counter | plus: 1 %}
 
                 <li class="category-list accordion_list">
-                  <h4 class="cat-title accordion_head {% if counter == 1 %} open {% else %} close-tog {% endif %}">
-                    <span class="title">{{ collection.title }}</span
+                  <h4 class="cat-title accordion_head {% if collection1.title == collection.title %} open {% else %} close-tog {% endif %}">
+                    <span class="title">{{ collection1.title }}</span
                     ><span
                       class="up-down-wrrow"
                     ></span>
                   </h4>
                   <ul
                     class="cat-body accordion_body active"
-                    {% if counter == 1 %}
+                    {% if collection1.title == collection.title %}
                       style="display:block"
                     {% else %}
                       style="display:none"
                     {% endif %}
                   >
-                    {% for product in collection.products %}
+                    {% for product in collection1.products %}
                       <li>
                         <a href="{{ product.url}}?view=custom">{{ product.title }}</a>
                       </li>
@@ -72,7 +64,7 @@
               </select>
             </div>
           </div>
-          {% for product in collections.all.products %}
+          {% for product in collection.products %}
             <div class="col-12 col-md-6 col-lg-4 mb-4">
               <div class="product-wrap">
                 <div class="prd-img">

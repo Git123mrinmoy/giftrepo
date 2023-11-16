@@ -27,14 +27,14 @@
           {% for collection in collections %}
             {% comment %}
               <li>
-                <a href="{{ collection.url }}">
+                <a href="{{ collection.url }}?view=custom">
                   {{ collection.title }}
                 </a>
               </li>
             {% endcomment %}
             <div class="category-sld-items">
               <div class="gifts-category-wrap">
-                <a href="{{ collection.url }}">
+                <a href="{{ collection.url }}?view=custom">
                   <div class="gifts-category-img">
                     {% comment %} <img src="images/gifts-category-img1.jpg" alt=""> {% endcomment %}
                     <img
@@ -60,7 +60,7 @@
             <h3>
               {{ settings.custom_collection1.title }}
             </h3>
-            <a class="btn btn-gradient" href="{{ settings.custom_collection1.url }}"
+            <a class="btn btn-gradient" href="{{ settings.custom_collection1.url }}?view=custom"
               >Shop Now <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
@@ -76,7 +76,7 @@
             <h3>
               {{ settings.custom_collection2.title }}
             </h3>
-            <a class="btn btn-info" href="{{ settings.custom_collection2.url }}"
+            <a class="btn btn-info" href="{{ settings.custom_collection2.url }}?view=custom"
               >Shop Now <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
@@ -160,12 +160,13 @@
               </div>
             </div>
           {% endfor %}
+          <div class="col-12 text-center mt-4">
+            <a class="btn btn-gradient" href="{{ collection.url }}?view=custom"
+              >Shop Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
         {% endif %}
       {% endfor %}
-
-      <div class="col-12 text-center mt-4">
-        <a class="btn btn-gradient" href="/collections">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
     </div>
   </div>
 </section>
@@ -405,7 +406,7 @@
             <h3>
               {{ settings.custom_collection3.title }}
             </h3>
-            <a class="btn btn-gradient" href="{{ settings.custom_collection3.url }}"
+            <a class="btn btn-gradient" href="{{ settings.custom_collection3.url }}?view=custom"
               >Shop Now <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
