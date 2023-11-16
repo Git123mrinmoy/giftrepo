@@ -63,6 +63,19 @@
   }
 {%- endstyle -%}
 
+<section class="inner-banner">
+  <img class="img-fluid" src="{{ section.settings.search_banner | img_url: 'master' }}" alt="">
+  <div class="inner-banner-cont">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>{{ page_title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% paginate search.results by 24 %}
   <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -339,6 +352,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "image_picker",
+      "label": "Banner Image",
+      "id": "search_banner"
+    },
     {
       "type": "range",
       "id": "columns_desktop",
